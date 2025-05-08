@@ -1,4 +1,7 @@
+import { useTheme } from "./context/ThemeContext";
+
 const MenuSvg = ({ show }) => {
+    const { theme } = useTheme();
     return (
         <svg
             className='overflow-visible'
@@ -11,7 +14,7 @@ const MenuSvg = ({ show }) => {
                 width='20'
                 height='2'
                 rx='1'
-                fill='black'
+                fill={theme === 'dark' ? 'white' : 'black'}
                 transform={`rotate(${show ? '45' : '0'})`}
             />
             <rect
@@ -20,7 +23,7 @@ const MenuSvg = ({ show }) => {
                 width='20'
                 height='2'
                 rx='1'
-                fill='black'
+                fill={theme === 'dark' ? 'white' : 'black'}
                 transform={`rotate(${show ? '-45' : '0'})`}
             />
         </svg>

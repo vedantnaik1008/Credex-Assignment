@@ -1,5 +1,7 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @layer utilities {
   @keyframes shimmer {
     from {
@@ -27,7 +29,7 @@
   --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
   --animate-aurora: aurora 60s linear infinite;
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
-  --breakpoint-900: 900px;
+  --breakpoint-950: 950px;
   --breakpoint-500: 500px;
  
  

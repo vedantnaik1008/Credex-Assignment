@@ -95,7 +95,7 @@ const WhyChooseUs = () => {
     ];
 
     return (
-        <section id='wcu' className="section bg-white">
+        <section id='wcu' className='section dark:!bg-zinc-900 bg-white'>
             <Timeline data={data} />
         </section>
     );

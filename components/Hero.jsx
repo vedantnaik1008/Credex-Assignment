@@ -55,13 +55,13 @@ const Hero = () => {
                                         className='bg-[#000000] text-white dark:bg-white dark:text-black border-black dark:border-white'>
                                         {' '}
                                     </Button> */}
-                                    <button className='btn-tweet hover:scale-105 bg-[#000000] shadow-[inset_0_-4px_0_0_rgba(0,0,0,1)] !text-white  btn-lg  transition-all duration-300 ease-out'>
+                                    <button className='btn-tweet hover:scale-105 bg-[#000000] dark:bg-white dark:!text-black shadow-[inset_0_-4px_0_0_rgba(0,0,0,1)] !text-white  btn-lg  transition-all duration-300 ease-out'>
                                         Get a Quote
                                     </button>
                                 </Link>
                                 <a
                                     href='#'
-                                    className='py-4 rounded-full text-black font-semibold hover:scale-105 shadow-[inset_0_-4px_0_0_rgba(0,0,0,1)]  btn-lg  transition-all duration-300 ease-out border-2 border-black'>
+                                    className='py-4 rounded-full dark:text-white dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)] text-black font-semibold hover:scale-105 dark:shadow-[none] shadow-[inset_0_-4px_0_0_rgba(0,0,0,1)]  btn-lg  transition-all duration-300 ease-out border-2 border-black'>
                                     Sell My Licenses
                                 </a>
                             </div>

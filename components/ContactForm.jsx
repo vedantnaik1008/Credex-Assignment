@@ -20,7 +20,7 @@ export default function ContactForm() {
 
                     <form onSubmit={handleSubmit} className='space-y-6'>
                         <div>
-                            <label className='block font-medium mb-1'>
+                            <label className='block mb-1 dark:text-white'>
                                 Name
                             </label>
                             <input
@@ -28,7 +28,7 @@ export default function ContactForm() {
                                 name='name'
                                 value={values.name}
                                 onChange={handleChange}
-                                className='w-full p-3 border rounded-md bg-white dark:bg-zinc-800'
+                                className='w-full p-3 border rounded-md bg-white dark:text-white dark:bg-zinc-900'
                             />
                             {errors.name && (
                                 <p className='text-red-500 text-sm mt-1'>
@@ -37,7 +37,7 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block font-medium mb-1'>
+                            <label className='block mb-1 dark:text-white'>
                                 Email
                             </label>
                             <input
@@ -45,7 +45,7 @@ export default function ContactForm() {
                                 name='email'
                                 value={values.email}
                                 onChange={handleChange}
-                                className='w-full p-3 border rounded-md bg-white dark:bg-zinc-800'
+                                className='w-full p-3 border rounded-md bg-white dark:text-white dark:bg-zinc-900'
                             />
                             {errors.email && (
                                 <p className='text-red-500 text-sm mt-1'>
@@ -54,7 +54,7 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block font-medium mb-1'>
+                            <label className='block mb-1 dark:text-white'>
                                 Company
                             </label>
                             <input
@@ -62,7 +62,7 @@ export default function ContactForm() {
                                 name='company'
                                 value={values.company}
                                 onChange={handleChange}
-                                className='w-full p-3 border rounded-md bg-white dark:bg-zinc-800'
+                                className='w-full p-3 border rounded-md bg-white dark:text-white dark:bg-zinc-900'
                             />
                             {errors.company && (
                                 <p className='text-red-500 text-sm mt-1'>
@@ -71,14 +71,14 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block font-medium mb-1'>
+                            <label className='block mb-1 dark:text-white'>
                                 License Type
                             </label>
                             <select
                                 name='licenseType'
                                 value={values.licenseType}
                                 onChange={handleChange}
-                                className='w-full p-3 border rounded-md bg-white dark:bg-zinc-800'>
+                                className='w-full p-3 border rounded-md bg-white dark:bg-zinc-900 dark:text-white'>
                                 <option value=''>Select an option</option>
                                 <option value='SaaS'>SaaS</option>
                                 <option value='Desktop'>Desktop</option>
@@ -91,7 +91,7 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block font-medium mb-1'>
+                            <label className='block mb-1 dark:text-white'>
                                 Message
                             </label>
                             <textarea
@@ -99,7 +99,7 @@ export default function ContactForm() {
                                 rows={4}
                                 value={values.message}
                                 onChange={handleChange}
-                                className='w-full p-3 border rounded-md bg-white dark:bg-zinc-800'
+                                className='w-full p-3 border rounded-md bg-white dark:text-white dark:bg-zinc-900'
                             />
                             {errors.message && (
                                 <p className='text-red-500 text-sm mt-1'>
@@ -109,7 +109,7 @@ export default function ContactForm() {
                         </div>
                         <button
                             type='submit'
-                            className='btn btn-lg bg-black text-white hover:bg-zinc-800'>
+                            className='btn btn-lg bg-black text-white dark:hover:opacity-80  dark:text-white  dark:border-2 font-bold dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]'>
                             Submit
                         </button>
                     </form>

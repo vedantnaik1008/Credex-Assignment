@@ -10,7 +10,7 @@ const MobileNav = ({ show, setShow }) => {
     return (
         <div className={show ? ' p-4' : 'px-2 sm:px-6  md:hidden'}>
             <div
-                className='flex flex-col items-center sm:items-center justify-center gap-6 p-1'
+                className='flex flex-col items-center sm:items-center justify-center gap-6 p-1 text-black dark:text-white'
                 onClick={() => setShow(!show)}>
                 {NavLinks.nav.map((res) => (
                     <Link
@@ -21,7 +21,7 @@ const MobileNav = ({ show, setShow }) => {
                         smooth={res.smooth}
                         spy={res.spy}
                         offset={res.offset}
-                        className='cursor-pointer active text-black'>
+                        className='cursor-pointer active'>
                         {res.name}
                     </Link>
                 ))}
