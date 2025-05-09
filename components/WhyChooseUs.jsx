@@ -14,7 +14,7 @@ const WhyChooseUs = () => {
             content: (
                 <div className='space-y-4'>
                     <div className='flex items-start gap-3'>
-                        <Rocket className='h-5 w-5 text-blue-600 dark:text-blue-400 mt-1' />
+                        <Rocket className='h-7 md:h-5 w-7 md:w-5 text-blue-600 dark:text-blue-400 mt-1' />
                         <p className='text-sm text-neutral-800 dark:text-neutral-200'>
                             Launched SoftSell with a mission to simplify
                             enterprise software resale and boost ROI for
@@ -22,14 +22,14 @@ const WhyChooseUs = () => {
                         </p>
                     </div>
                     <div className='flex items-start gap-3'>
-                        <TrendingUp className='h-5 w-5 text-green-600 dark:text-green-400 mt-1' />
+                        <TrendingUp className='h-7 md:h-5 w-7 md:w-5 text-green-600 dark:text-green-400 mt-1' />
                         <p className='text-sm text-neutral-800 dark:text-neutral-200'>
                             Onboarded 100+ verified sellers and reached ₹1
                             crore+ in software transactions.
                         </p>
                     </div>
                     <div className='flex items-start gap-3'>
-                        <CheckCircle className='h-5 w-5 text-emerald-600 dark:text-emerald-400 mt-1' />
+                        <CheckCircle className='h-7 md:h-5 w-7 md:w-5 text-emerald-600 dark:text-emerald-400 mt-1' />
                         <p className='text-sm text-neutral-800 dark:text-neutral-200'>
                             Introduced instant license verification and
                             auto-transfer protocol for safer deals.
@@ -43,21 +43,21 @@ const WhyChooseUs = () => {
             content: (
                 <div className='space-y-4'>
                     <div className='flex items-start gap-3'>
-                        <ShieldCheck className='h-5 w-5 text-purple-600 dark:text-purple-400 mt-1' />
+                        <ShieldCheck className='h-7 md:h-5 w-7 md:w-5 text-purple-600 dark:text-purple-400 mt-1' />
                         <p className='text-sm text-neutral-800 dark:text-neutral-200'>
                             Developed a proprietary escrow system to protect
                             both buyers and sellers.
                         </p>
                     </div>
                     <div className='flex items-start gap-3'>
-                        <Users className='h-5 w-5 text-orange-500 dark:text-orange-400 mt-1' />
+                        <Users className='h-7 md:h-5 w-7 md:w-5 text-orange-500 dark:text-orange-400 mt-1' />
                         <p className='text-sm text-neutral-800 dark:text-neutral-200'>
                             Conducted interviews with 200+ software buyers to
                             design a seamless resale experience.
                         </p>
                     </div>
                     <div className='flex items-start gap-3'>
-                        <CheckCircle className='h-5 w-5 text-teal-600 dark:text-teal-400 mt-1' />
+                        <CheckCircle className='h-7 md:h-5 w-7 md:w-5 text-teal-600 dark:text-teal-400 mt-1' />
                         <p className='text-sm text-neutral-800 dark:text-neutral-200'>
                             Secured seed funding and built the MVP with Next.js,
                             TailwindCSS, and secure APIs.
