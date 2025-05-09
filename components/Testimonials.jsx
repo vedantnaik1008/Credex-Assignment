@@ -40,7 +40,7 @@ export default function Testimonials() {
     return (
         <section
             id='testimonials'
-            className='h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-zinc-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden section'>
+            className='h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-zinc-900 dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden section story'>
             <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-zinc-900 dark:text-white text-center'>
                 Testimonials
             </h2>

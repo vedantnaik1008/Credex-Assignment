@@ -8,12 +8,12 @@ const Hero = () => {
     return (
         <AuroraBackground>
             <section
-                className='min-h-[85vh] flex items-center mt-28 container-1 relative'
+                className='min-h-[85vh] flex items-center mt-28 container-1 relative story'
                 id='home'>
                 <div className='container mx-auto'>
                     <div className='flex flex-col justify-center items-center gap-y-8 lg:gap-x-12'>
                         <div className='font-secondary'>
-                            <h1 className='text-3xl md:text-6xl  text-center lg:max-w-[900px]  text-black font-medium my-4 lg:text-[80px]'>
+                            <h1 className='text-3xl md:text-6xl  text-center lg:max-w-[900px]  text-black dark:text-white font-medium my-4 lg:text-[80px]'>
                                 Sell Unused Licenses for Cash
                             </h1>
 

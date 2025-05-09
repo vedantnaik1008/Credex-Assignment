@@ -29,7 +29,7 @@ const steps = [
 
 export default function HowItWorks() {
     return (
-        <section id='hiw' className='section bg-white dark:bg-zinc-900'>
+        <section id='hiw' className='section bg-white dark:bg-zinc-900 story'>
             <div className='container mx-auto px-4 text-center'>
                 <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-zinc-900 dark:text-white'>
                     How It Works

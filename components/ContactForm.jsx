@@ -12,7 +12,7 @@ export default function ContactForm() {
         <>
             <section
                 id='contact'
-                className='section bg-white dark:bg-zinc-900 relative z-10'>
+                className='section bg-white dark:bg-zinc-900 relative z-10 story'>
                 <div className='container mx-auto px-4 max-w-2xl'>
                     <h2 className='text-3xl md:text-4xl lg:text-5xl font-bold mb-12 text-zinc-900 dark:text-white text-center'>
                         Contact Us
