@@ -5,7 +5,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
-    const { values, errors, submitted, handleChange, handleSubmit } =
+    const { values, errors, handleChange, handleSubmit } =
         useContactForm();
 
     return (
@@ -20,10 +20,13 @@ export default function ContactForm() {
 
                     <form onSubmit={handleSubmit} className='space-y-6'>
                         <div>
-                            <label className='block mb-1 dark:text-white'>
+                            <label
+                                htmlFor='name'
+                                className='block mb-1 dark:text-white'>
                                 Name
                             </label>
                             <input
+                                id='name'
                                 type='text'
                                 name='name'
                                 value={values.name}
@@ -37,10 +40,13 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block mb-1 dark:text-white'>
+                            <label
+                                htmlFor='email'
+                                className='block mb-1 dark:text-white'>
                                 Email
                             </label>
                             <input
+                                id='email'
                                 type='email'
                                 name='email'
                                 value={values.email}
@@ -54,10 +60,13 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block mb-1 dark:text-white'>
+                            <label
+                                htmlFor='company'
+                                className='block mb-1 dark:text-white'>
                                 Company
                             </label>
                             <input
+                                id='company'
                                 type='text'
                                 name='company'
                                 value={values.company}
@@ -71,10 +80,13 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block mb-1 dark:text-white'>
+                            <label
+                                htmlFor='licenseType'
+                                className='block mb-1 dark:text-white'>
                                 License Type
                             </label>
                             <select
+                                id='licenseType'
                                 name='licenseType'
                                 value={values.licenseType}
                                 onChange={handleChange}
@@ -91,10 +103,13 @@ export default function ContactForm() {
                             )}
                         </div>
                         <div>
-                            <label className='block mb-1 dark:text-white'>
+                            <label
+                                htmlFor='message'
+                                className='block mb-1 dark:text-white'>
                                 Message
                             </label>
                             <textarea
+                                id='message'
                                 name='message'
                                 rows={4}
                                 value={values.message}
@@ -109,7 +124,7 @@ export default function ContactForm() {
                         </div>
                         <button
                             type='submit'
-                            className='btn btn-lg bg-black text-white dark:hover:opacity-80  dark:text-white  dark:border-2 font-bold dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]'>
+                            className='btn btn-lg bg-black text-white dark:hover:opacity-80 dark:text-white dark:border-2 font-bold dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]'>
                             Submit
                         </button>
                     </form>
