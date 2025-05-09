@@ -1,6 +1,6 @@
 'use client';
 import { useTheme } from '@/components/context/ThemeContext';
-import { Moon, Sun } from 'lucide-react'; // or use your own icons
+import { Moon, Sun } from '@/utils/LucidIcons'; // or use your own icons
 
 export default function ThemeToggle() {
     const { theme, toggleTheme } = useTheme();

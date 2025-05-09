@@ -1,17 +1,6 @@
-import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
-import Crisp from '@/components/Crisp';
 import { ThemeProvider } from '@/components/context/ThemeContext';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
-    subsets: ['latin']
-});
-
-const geistMono = Geist_Mono({
-    variable: '--font-geist-mono',
-    subsets: ['latin']
-});
 
 export const metadata = {
     title: 'SoftSell – Resell Software Easily',
@@ -21,11 +10,11 @@ export const metadata = {
         title: 'SoftSell – Resell Software Easily',
         description:
             'SoftSell helps you resell unused software licenses effortlessly.',
-        url: 'https://credex-assignment-swart.vercel.app', // Replace with your actual domain
+        url: 'https://credex-assignment-swart.vercel.app',
         type: 'website',
         images: [
             {
-                url: '/public/download (1).png', // Replace with your actual OG image path
+                url: '/public/download (1).png',
                 width: 1200,
                 height: 630,
                 alt: 'SoftSell Preview'
@@ -37,10 +26,10 @@ export const metadata = {
         title: 'SoftSell – Resell Software Easily',
         description:
             'SoftSell helps you resell unused software licenses effortlessly.',
-        images: ['/public/download (1).png'] // Replace with your actual OG image path
+        images: ['/public/download (1).png'] 
     },
     icons: {
-        icon: '/favicon.ico' // Favicon path
+        icon: '/favicon.ico'
     }
 };
 
@@ -48,9 +37,8 @@ export default function RootLayout({ children }) {
     return (
         <html lang='en'>
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+                className={`antialiased`}>
                 <ThemeProvider>{children}</ThemeProvider>
-                <Crisp />
             </body>
         </html>
     );

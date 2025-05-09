@@ -1,19 +1,26 @@
 'use client';
+import { useState } from 'react';
+import dynamic from 'next/dynamic';
 
-import { useEffect } from 'react';
+const LazyCrisp = dynamic(() => import('@/components/LazyCrisp'), {
+    ssr: false,
+    loading: () => null
+});
 
 export default function Crisp() {
-    useEffect(() => {
-        if (!process.env.NEXT_PUBLIC_CRISP_WEBSITE_ID) return;
+    const [loadCrisp, setLoadCrisp] = useState(false);
 
-        window.$crisp = [];
-        window.CRISP_WEBSITE_ID = process.env.NEXT_PUBLIC_CRISP_WEBSITE_ID;
-
-        const script = document.createElement('script');
-        script.src = 'https://client.crisp.chat/l.js';
-        script.async = true;
-        document.head.appendChild(script);
-    }, []);
-
-    return null;
+    return (
+        <>
+            {!loadCrisp ? (
+                <button
+                    onClick={() => setLoadCrisp(true)}
+                    className='fixed z-[1000] bottom-6 right-6 bg-black text-white px-4 py-2 rounded-full shadow-lg'>
+                    Chat with Us
+                </button>
+            ) : (
+                <LazyCrisp />
+            )}
+        </>
+    );
 }

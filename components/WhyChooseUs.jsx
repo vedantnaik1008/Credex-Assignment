@@ -5,7 +5,7 @@ import {
     TrendingUp,
     ShieldCheck,
     Users
-} from 'lucide-react';
+} from '@/utils/LucidIcons';
 
 const WhyChooseUs = () => {
     const data = [

@@ -1,5 +1,5 @@
 'use client';
-import { Upload, DollarSign, CheckCircle } from 'lucide-react';
+import { Upload, DollarSign, CheckCircle } from '@/utils/LucidIcons';
 import { GlowingStarsBackgroundCard, GlowingStarsDescription, GlowingStarsTitle } from './ui/glowing-stars';
 import React from 'react';
 
