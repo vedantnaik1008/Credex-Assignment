@@ -25,7 +25,6 @@ const Hero = () => {
                                 />
                             </div>
                             <div
-                                {...animationProps}
                                 className='flex flex-wrap gap-3 md:gap-6  items-center justify-center mb-12 mx-auto'>
                                 <Link
                                     href='#'

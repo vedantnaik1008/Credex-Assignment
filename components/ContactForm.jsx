@@ -1,12 +1,15 @@
 'use client';
 
+import dynamic from 'next/dynamic';
 import { useContactForm } from '@/hook/useContactForm';
-import { ToastContainer } from 'react-toastify';
+const ToastContainer = dynamic(
+    () => import('react-toastify').then((mod) => mod.ToastContainer),
+    { ssr: false }
+);
 import 'react-toastify/dist/ReactToastify.css';
 
 export default function ContactForm() {
-    const { values, errors, handleChange, handleSubmit } =
-        useContactForm();
+    const { values, errors, handleChange, handleSubmit } = useContactForm();
 
     return (
         <>
